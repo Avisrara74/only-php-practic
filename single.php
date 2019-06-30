@@ -1,10 +1,5 @@
 <?php include('./connectionDB.php'); ?>
 <!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Пост</title>
@@ -127,7 +122,6 @@
 
 										<textarea name="comment_text" required></textarea><br>
 										<input type="submit" class="button big fit" value="Add Comment" name="knopka">
-										<!--НЕ СМОГ ПЕРЕДАТЬ ПЕРЕМЕННУЮ article_id В ДРУГОЙ ФАЙЛ, ЗАБИЛ, ВСТАВИЛ ЭТУ ЧАСТЬ КОДА СЮДА-->
 										<?php
 											$user_author = $_SESSION['username'];
 											// получаем ID авторизированного пользователя для его добавления в БД

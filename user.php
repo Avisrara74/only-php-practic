@@ -1,10 +1,5 @@
 <?php include('./connectionDB.php'); ?>
 <!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Профиль пользователя</title>
@@ -39,27 +34,7 @@
 
 				<!-- Main -->
 					<div id="main">
-						<?php include('./functions.php'); ?>
-						<?php /*
-							$sql10 = "SELECT author FROM articles";
-							$result10 = mysqli_query($connection, $sql10);
-							$result11 = mysqli_fetch_all($result10, MYSQLI_ASSOC);
-							$user_id = $user_articles['author'];
-							var_dump ($user_id) . '</br></br></br></br></br></br></br>'; */
-						?>
-						<?php /*
-							$sql = "SELECT articles.id, title, second_title, pubdate, author, image_article, image_avatar, text, likes, comments
-								FROM users
-								INNER JOIN articles on author = users.login WHERE '$user_id' = author";
-							$result = mysqli_query($connection, $sql);
-							$user_articles = mysqli_fetch_all($result, MYSQLI_ASSOC);
-							echo '</br></br></br></br></br></br>' . $sql . '</br>';
-							var_dump($user_articles) . '</br>'; */
-
-						?>
-						
-						<!-- Post -->
-						<?php 
+						<?php include('./functions.php'); 
 							$user_id = $_GET['author'];
 							$user_post = GET_article_by_author ($user_id);
 						?>

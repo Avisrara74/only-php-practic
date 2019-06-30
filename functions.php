@@ -1,13 +1,4 @@
 <?php 
-/*	function GET_categories() {
-		global $connection;
-		$sql = "SELECT * FROM `categories`";
-		$result = mysqli_query($connection, $sql);
-		$categories = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-		return $categories;
-	}
-*/
 	function GET_articles () {
 		global $connection;
 		$sql = "SELECT articles.id, title, second_title, pubdate, author, image_article, users.image_avatar, text, likes, comments FROM users

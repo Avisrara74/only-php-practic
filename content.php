@@ -61,7 +61,7 @@
 		</footer>
 		</article>
 		<?php $i = $i+3; ?>
-		<!-- Pagination -->
+		<!-- Пагинация -->
 		<?php if (($i % 7) == 2) {
 			$index_link = $index_link+1;
 		?>
